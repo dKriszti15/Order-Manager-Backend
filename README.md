@@ -1,16 +1,4 @@
-# IDDE laborvizsgara
-
----
-
-## Profilozas
-
-### Spring: application.properties
-
-### nem spring: "PROFILE" env variable
-
----
-
-### Nem auto_inc id-ju order tabla
+### Not auto_inc id order table
 CREATE TABLE `orders_noautoincid` (
 `id` bigint NOT NULL,
 `orderDate` date NOT NULL,
@@ -21,7 +9,7 @@ CREATE TABLE `orders_noautoincid` (
 PRIMARY KEY (`id`)
 );
 
-### Auto_inc idju orders tabla
+### Auto_inc id orders table
 CREATE TABLE orders (
 id BIGINT AUTO_INCREMENT PRIMARY KEY,
 orderDate DATE NOT NULL,
@@ -32,7 +20,7 @@ status VARCHAR(50) NOT NULL
 );
 
 
-### Auto_inc idju products tabla
+### Auto_inc id products table
 CREATE TABLE `products` (
 `id` bigint NOT NULL AUTO_INCREMENT,
 `name` varchar(255) NOT NULL,
