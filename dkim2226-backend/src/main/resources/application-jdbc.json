@@ -1,0 +1,11 @@
+{
+  "dao": "jdbc",
+  "jdbc": {
+    "createTables": false,
+    "driverClass": "com.mysql.cj.jdbc.Driver",
+    "url": "jdbc:mysql://localhost:3306/idde",
+    "username": "root",
+    "password": "root",
+    "poolSize": 10
+  }
+}

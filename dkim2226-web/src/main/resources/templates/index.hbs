@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Webshop Orders</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<h1>WEBSHOP ORDERS</h1>
+
+<div class="orders-grid">
+    {{#each orders}}
+        <div class="order-card {{status}}">
+            <div class="order-card-header">
+                <div class="order-id">#{{id}}</div>
+                <div class="order-status">{{status}}</div>
+            </div>
+            <div class="order-card-body">
+                <p><strong>Date:</strong> {{orderDate}}</p>
+                <p><strong>Customer:</strong> {{customerName}}</p>
+                <p><strong>Address:</strong> {{address}}</p>
+                <p><strong>Amount Paid:</strong> ${{amountPaid}}</p>
+            </div>
+        </div>
+    {{/each}}
+</div>
+
+{{#if username}}
+    <form action="/logout" method="POST">
+        <button type="submit">Logout</button>
+    </form>
+
+{{/if}}
+
+</body>
+</html>

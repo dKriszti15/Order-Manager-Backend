@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'edu.bbte.idde.dkim2226.desktop'
+version = 'unspecified'
+
+application {
+    mainClass = 'edu.bbte.idde.dkim2226.desktop.Main'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':dkim2226-backend')
+}

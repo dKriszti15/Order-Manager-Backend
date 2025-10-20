@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'edu.bbte.idde.dkim2226.backend'
+version = 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'com.zaxxer', name: 'HikariCP', version: '5.0.1'
+
+    runtimeOnly group: 'com.mysql', name: 'mysql-connector-j', version: '9.1.0'
+
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.30'
+
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.30'
+
+}

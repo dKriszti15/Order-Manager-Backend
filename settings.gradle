@@ -1,0 +1,6 @@
+rootProject.name = 'dkim2226-idde'
+include 'dkim2226-web'
+include 'dkim2226-desktop'
+include 'dkim2226-backend'
+include 'dkim2226-spring'
+
